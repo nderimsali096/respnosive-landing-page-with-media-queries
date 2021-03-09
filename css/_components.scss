@@ -85,7 +85,7 @@
 }  
 
 .main {
-    padding: 9rem;
+    padding: 10rem 10rem 11rem 10rem;
 
     &__container {
         display: flex;
@@ -93,7 +93,7 @@
     }
 
     &__section-info {
-        display: flex;
+        display: block;
         height: 85vh;
         position: relative;
         margin-bottom: 5rem;
@@ -135,5 +135,156 @@
     }
 
 
+    &__section-creations {
+        display: flex;
+        flex-direction: column;
+
+        &--head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3.5rem;
+        }
+
+        &--tittle {
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 100;
+            line-height: 1;
+        }
+
+        &--btn {
+            text-transform: uppercase;
+            text-decoration: none !important;
+            color: var(--black) !important;
+            height: 2.5rem;
+            width: 10.5rem;
+            border: 2px solid var(--very-dark-gray);
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-text {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                letter-spacing: 0.2rem;
+            }
+        }
+
+        &--pics{
+            display: flex;
+            flex-direction: column;
+            
+            
+
+            &-1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-2 {
+                position: relative;
+
+                &-photo {
+                    border-radius: 1px;
+                    width: 17.5rem;
+                    filter: brightness(80%);
+                }
+
+                &-text {
+                    color: var(--white);
+                    position: absolute;
+                    bottom: 2.75rem;
+                    left: 2.75rem;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 100;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+}
+.div1 {
+    margin-bottom: 2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 2.5rem 10rem;
+
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        &-tittle {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        width: 20rem;
+
+        &--list{
+            color: var(--white);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            font-size: 0.8rem;
+            filter: brightness(80%);
+            font-family: Arial, Helvetica, sans-serif;
+
+            &-element {
+                color: var(--white);
+                position: relative;
+                outline: none;
     
+    
+               &::after {
+                   content: '';
+                   position: absolute;
+                   width: 100%;
+                   height: 0.175rem;
+                   left: 0;
+                   bottom: -0.5rem;
+                   background-color: var(--white);
+                   border-radius: 10px;
+               }
+    
+               &--hover {
+                &::after {
+                   transform: scale(0, 1); 
+                   transition: transform 0.3s;
+                }
+    
+                &:hover {
+                   &::after {
+                       transform: scale(1, 1);
+                   } 
+                }
+               }
+            }
+        }
+
+    }
+
+    &__copyright {
+        color: var(--dark-gray);
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
