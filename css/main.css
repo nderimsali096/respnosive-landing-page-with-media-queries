@@ -340,6 +340,10 @@ a:active {
   font-weight: 600;
 }
 
+.footer__upper-icons > * {
+  margin: 0.3rem;
+}
+
 .footer__down {
   display: -webkit-box;
   display: -ms-flexbox;
